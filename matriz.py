@@ -1,113 +1,144 @@
 import pyautogui as aut
 import time
 import os
+import PySimpleGUI as pg
 
 
 senha = aut.password(text='Insira sua senha', title='Login', default='', mask='*')
+BASE1 = aut.prompt(text='Insira a Base desejada 1:', title='Base1', default='')
+BASE2 = aut.prompt(text='Insira a Base desejada 1:', title='Base2', default='')
+BASE3 = aut.prompt(text='Insira a Base desejada 1:', title='Base3', default='')
+BASE4 = aut.prompt(text='Insira a Base desejada 1:', title='Base4', default='')
+BASE5 = aut.prompt(text='Insira a Base desejada 1:', title='Base5', default='')
+BASE6 = aut.prompt(text='Insira a Base desejada 1:', title='Base6', default='')
+BASE7 = aut.prompt(text='Insira a Base desejada 1:', title='Base7', default='')
 
 
-        #                                               Abrir o Corporate
+                #                                               Abrir o Corporate
 os.startfile('K:\Div\CorporateUpdater\JBS.Updater.Corporate.exe')
 time.sleep(6)
 
 
-        #                                               colocar a senha
+                #                                               colocar a senha
 
-aut.moveTo(934,533)
-aut.click()
 time.sleep(1)
-aut.write(senha)
-time.sleep(2)
-        #                                               mudar a matriz desejada
-
-        #                                               entrar
-aut.moveTo(1052,634)
-aut.click()
-time.sleep(20)
-aut.moveTo(1797,0)
-aut.click()
-
-        #                                               loop1
-
-        #                                               Abrir o Corporate
-os.startfile('K:\Div\CorporateUpdater\JBS.Updater.Corporate.exe')
-time.sleep(6)
-        #                                               colocar o login
-
-        #                                               colocar a senha
-aut.moveTo(934,533)
-aut.click()
-aut.write(senha)
-time.sleep(2)
-        #                                               mudar a matriz desejada
-aut.moveTo(983,570)
-aut.click()
-aut.write('Matriz')
+aut.write (senha)
+                #                                               mudar a matriz desejada
+aut.press('Tab')
+aut.write(BASE1)
 time.sleep(1)
 aut.press('Enter')
-time.sleep(1)
-        #                                               entrar
-aut.moveTo(1052,634)
-aut.click()
+                #                                               entrar
+aut.press('Enter')
 time.sleep(20)
-        #                                               loop2
-        #                                               Abrir o Corporate
+                #                                             LOOP1
+
+                #                                               Abrir o Corporate
 os.startfile('K:\Div\CorporateUpdater\JBS.Updater.Corporate.exe')
 time.sleep(6)
 
 
-        #                                               colocar a senha
+                #                                               colocar a senha
 
-aut.moveTo(934,533)
-aut.click()
 time.sleep(1)
 aut.write(senha)
-time.sleep(2)
-        #                                               mudar a matriz desejada
-aut.moveTo(983,570)
-aut.click()
-aut.write('PRE JBS')
+                #                                               mudar a matriz desejada
+aut.press('Tab')
+aut.write(BASE2)
 time.sleep(1)
 aut.press('Enter')
-time.sleep(1)
-        #                                               entrar
-aut.moveTo(1052,634)
-aut.click()
+                #                                               entrar
+aut.press('Enter')
 time.sleep(20)
-aut.moveTo(1797,0)
-aut.click()
-
-        #                                               loop3
-        #                                               Abrir o Corporate
+                #                                              LOOP2
+                #                                               Abrir o Corporate
 os.startfile('K:\Div\CorporateUpdater\JBS.Updater.Corporate.exe')
 time.sleep(6)
 
 
-        #                                               colocar a senha
+                #                                               colocar a senha
 
-aut.moveTo(934,533)
-aut.click()
 time.sleep(1)
 aut.write(senha)
-time.sleep(2)
-        #                                               mudar a matriz desejada
-aut.moveTo(983,570)
-aut.click()
-aut.write('LTZ JBS')
+                #                                               mudar a matriz desejada
+aut.press('Tab')
+aut.write(BASE3)
 time.sleep(1)
 aut.press('Enter')
-time.sleep(1)
-        #                                               entrar
-aut.moveTo(1052,634)
-aut.click()
+                #                                               entrar
+aut.press('Enter')
 time.sleep(20)
-aut.moveTo(1797,0)
-aut.click()
+                #                                              LOOP3
+                #                                               Abrir o Corporate
+os.startfile('K:\Div\CorporateUpdater\JBS.Updater.Corporate.exe')
+time.sleep(6)
 
-        #                                               loop4
 
-        #                                               loop5
+                #                                               colocar a senha
 
-        #                                               loop6
-aut.alert(text='Automação Finalizada', title='Login Automatico', button='OK')
+time.sleep(1)
+aut.write(senha)
+                #                                               mudar a matriz desejada
+aut.press('Tab')
+aut.write(BASE4)
+time.sleep(1)
+aut.press('Enter')
+                #                                               entrar
+aut.press('Enter')
+time.sleep(20)
+
+
+                #                                              LOOP4
+                #                                               Abrir o Corporate
+os.startfile('K:\Div\CorporateUpdater\JBS.Updater.Corporate.exe')
+time.sleep(6)
+
+
+                #                                               colocar a senha
+
+time.sleep(1)
+aut.write(senha)
+                #                                               mudar a matriz desejada
+aut.press('Tab')
+aut.write(BASE5)
+time.sleep(1)
+aut.press('Enter')
+                #                                               entrar
+aut.press('Enter')
+time.sleep(20)
+                #                                              LOOP5
+                #                                               Abrir o Corporate
+os.startfile('K:\Div\CorporateUpdater\JBS.Updater.Corporate.exe')
+time.sleep(6)
+
+
+                #                                               colocar a senha
+
+time.sleep(1)
+aut.write(senha)
+                #                                               mudar a matriz desejada
+aut.press('Tab')
+aut.write(BASE6)
+time.sleep(1)
+aut.press('Enter')
+                #                                               entrar
+aut.press('Enter')
+time.sleep(20)
+                #                                              LOOP6
+                        #                                               Abrir o Corporate
+os.startfile('K:\Div\CorporateUpdater\JBS.Updater.Corporate.exe')
+time.sleep(6)
+
+
+                #                                               colocar a senha
+
+time.sleep(1)
+aut.write(senha)
+                #                                               mudar a matriz desejada
+aut.press('Tab')
+aut.write(BASE7)
+time.sleep(1)
+aut.press('Enter')
+                #                                               entrar
+aut.press('Enter')
 
